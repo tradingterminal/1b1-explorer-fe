@@ -7,7 +7,7 @@ import { CONTENT_MAX_WIDTH } from 'ui/shared/layout/utils';
 import DeFiDropdown from './DeFiDropdown';
 import NetworkMenu from './NetworkMenu';
 import Settings from './settings/Settings';
-import TopBarStats from './TopBarStats';
+// import TopBarStats from './TopBarStats';
 
 const TopBar = () => {
   return (
@@ -21,7 +21,8 @@ const TopBar = () => {
         alignItems="center"
         maxW={ `${ CONTENT_MAX_WIDTH }px` }
       >
-        { !config.features.opSuperchain.isEnabled ? <TopBarStats/> : <div/> }
+        { /* { !config.features.opSuperchain.isEnabled ? <TopBarStats/> : <div/> } */ }
+        <div/>
         <Flex alignItems="center">
           { config.features.deFiDropdown.isEnabled && (
             <>
