@@ -12,6 +12,7 @@ import UserWalletDesktop from 'ui/snippets/user/wallet/UserWalletDesktop';
 
 export const BACKGROUND_DEFAULT = '#FFE555';
 const TEXT_COLOR_DEFAULT = 'white';
+const TEXT_COLOR_DEFAULT_DARK = 'black';
 const BORDER_DEFAULT = 'none';
 
 const HeroBanner = () => {
@@ -34,7 +35,7 @@ const HeroBanner = () => {
     _dark:
       config.UI.homepage.heroBanner?.text_color?.[1] ||
       config.UI.homepage.heroBanner?.text_color?.[0] ||
-      TEXT_COLOR_DEFAULT,
+      TEXT_COLOR_DEFAULT_DARK,
   };
 
   const border = {
