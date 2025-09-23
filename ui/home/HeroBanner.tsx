@@ -30,7 +30,7 @@ const HeroBanner = () => {
     _light:
       // light mode
       config.UI.homepage.heroBanner?.text_color?.[0] ||
-      TEXT_COLOR_DEFAULT,
+      TEXT_COLOR_DEFAULT_DARK,
     // dark mode
     _dark:
       config.UI.homepage.heroBanner?.text_color?.[1] ||
